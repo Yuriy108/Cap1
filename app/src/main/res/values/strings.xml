@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Cap</string>
+    <string-array name="coffee">
+        <item>Latte</item>
+        <item>capuchino</item>
+        <item>expresso</item>
+        <item>americano</item>
+    </string-array>
+    <string-array name="tea">
+        <item>black</item>
+        <item>green</item>
+        <item>white</item>
+    </string-array>
+</resources>
