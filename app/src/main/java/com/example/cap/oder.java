@@ -84,7 +84,7 @@ public class oder extends AppCompatActivity {
             additions.append("Sugar").append("  ");
         }
         String result=String.format("Client %s make the oder %s, with %s and type is %s",name,drink,additions.toString(),typeOfDrink);
-        
+
         Log.d("result",result);
 
 
