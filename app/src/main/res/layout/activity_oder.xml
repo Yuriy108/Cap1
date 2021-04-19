@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewHello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Helo what kind of drink do you want?"
@@ -31,20 +31,23 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        app:layout_constraintTop_toBottomOf="@+id/textViewHello">
 
         <RadioButton
 
-            android:id="@+id/radioButton"
+            android:id="@+id/radioButtonTea"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:checked="true"
+            android:onClick="chooseDrink"
             android:text="Tea" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/radioButtonCoffee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="chooseDrink"
             android:text="Coffe" />
     </RadioGroup>
 
@@ -73,7 +76,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3">
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/checkBoxSugar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -81,7 +84,7 @@
             android:text="Sugar" />
 
         <CheckBox
-            android:id="@+id/checkBox2"
+            android:id="@+id/checkBoxMilk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -89,7 +92,7 @@
             android:text="Milk" />
 
         <CheckBox
-            android:id="@+id/checkBox3"
+            android:id="@+id/checkBoxLemon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -129,4 +132,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCoffe"
+        android:onClick="sentOder"
+        app:srcCompat="@drawable/oder" />
 </androidx.constraintlayout.widget.ConstraintLayout>
